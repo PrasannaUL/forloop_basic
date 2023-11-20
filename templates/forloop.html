@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>forloop example</h1>
+
+
+        {{name}}   <!--it prints name directly without spaces i.e Ammu-->
+
+
+
+        <!--inline level tag.it prints each character in same line with space for each iteration i.e A m m u-->
+
+        {% for i in name %}
+            {{i}}
+        {% endfor %}  
+        
+        
+
+        <!--block level tab.It prints each chracter in new line for each iteration-->
+
+        {% for i in name %}
+            <h1>{{i}}</h1> 
+        {% endfor %}  
+    </center>
+    
+</body>
+</html>
